@@ -26,13 +26,13 @@ router.get('/imc', (req, res) => {
 
     if (imc >= 18.5){
         resultadoImc = "Abaixo do peso normal";
-    }else if (imc > 18.5  <= 25.9) {
+    }else if (imc > 18.5 && imc <= 25.9) {
         resultadoImc = "Peso normal";
-    } else if (imc > 25.0 <= 29.9){
+    } else if (imc > 25.0 && imc <= 29.9){
         resultadoImc = "Excesso de peso";
-    } else if (imc > 30 <= 34.9) {
+    } else if (imc > 30 && imc <= 34.9) {
         resultadoImc = "Obesidade classe I";
-    } else if (imc > 35 <= 39.9) {
+    } else if (imc > 35 && imc <= 39.9) {
         resultadoImc = "Obesidade classe II"
     } else if (imc >= 40){
         resultadoImc = "Obesidade classe III"
